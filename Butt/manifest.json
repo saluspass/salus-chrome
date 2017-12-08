@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Salus",
+    "version": "0.1",
+    "description": "Chrome plugin to access passwords stored with Salus.",
+
+    "content_scripts": 
+    [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
