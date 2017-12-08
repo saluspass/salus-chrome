@@ -9,7 +9,7 @@ function replacePassword(username, password){
         if(inputs[i].type == "password") {
             inputs[i].value = password;
         }
-        else if(inputs[i].type == "text" && isAccount(inputs[i].id)) {
+        else if((inputs[i].type == "text" || inputs[i].type == "email") && isAccount(inputs[i].id)) {
             inputs[i].value = username;
         }
     }
